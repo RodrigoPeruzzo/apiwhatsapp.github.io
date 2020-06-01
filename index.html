@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            API - WhatsApp
+        </title>
+    </head>
+    <body>
+        <div>
+            <p>Digite o número do telefone</p>
+
+            <input id="numeroTelefone" placeholder="47999988776" type="number"/>
+
+            <button type="button" onclick="processar()">Processar</button>
+        </div>
+
+        <script>
+            function processar() {
+              var numero = document.getElementById("numeroTelefone").value;
+
+              var linkWhats = "https://api.whatsapp.com/send?phone=55" + numero;
+
+              window.open(linkWhats);
+            }
+        </script>
+    </body>
+</html>
